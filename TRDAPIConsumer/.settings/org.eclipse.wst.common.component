@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TRDAPIConsumer">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="StreetsEvent.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/StreetsEvent/StreetsEvent">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="TokenManagement.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/TokenManagement/TokenManagement">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="TRDAPIConsumer"/>
+        <property name="java-output-path" value="/TRDAPIConsumer/build/classes"/>
+    </wb-module>
+</project-modules>
